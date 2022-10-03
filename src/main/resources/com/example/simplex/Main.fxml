@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.simplex.controllers.MainController">
+    <children>
+        <VBox>
+            <children>
+
+                <MenuBar fx:id="menuBar" minWidth="800">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Файл">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#importTask" text="Открыть"/>
+                                <MenuItem mnemonicParsing="false" onAction="#exportTask" text="Сохранить"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false">
+                            <graphic>
+                                <Label fx:id="menuHelp" onMouseClicked="#clickAboutEvent" text="Помощь"/>
+                            </graphic>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab fx:id="conditionsTab" text="Условия задачи">
+                            <fx:include fx:id="problemTabPage" source="problem.fxml"/>
+                        </Tab>
+                        <Tab fx:id="extraSimplexTab" text="Метод искусственного базиса">
+                            <fx:include fx:id="artificialSimplexTabPage" source="ArtificialSimplex.fxml"/>
+                        </Tab>
+                        <Tab fx:id="simplexTab" text="Симплекс метод">
+                            <fx:include fx:id="simplexTabPage" source="Simplex.fxml"/>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

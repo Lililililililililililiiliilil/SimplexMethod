@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <Label text="Помощь" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="26.0"/>
+            </font>
+        </Label>
+    </top>
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+    </padding>
+    <center>
+        <ScrollPane focusTraversable="false" prefHeight="409.0" prefWidth="571.0"
+                    style="-fx-focus-color: transparent; -fx-border-color: transparent;" BorderPane.alignment="CENTER">
+            <content>
+                <VBox prefHeight="1000.0" prefWidth="545.0">
+                    <children>
+                        <Label alignment="TOP_LEFT" prefHeight="167.0" prefWidth="529.0"
+                               text="Чтобы приступить к решению задачи требуется на стартовом экране ввести все необходимые значения, а затем нажать кнопку &quot;Применить&quot;. Так же вы можете сохранить введенные условия задачи в файл, что воспользоваться ими в дальнейшем. "
+                               wrapText="true">
+                            <font>
+                                <Font size="17.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="529.0"
+                               text="Если вы хотите сбросить введённые данные, требуется нажать на кнопку &quot;Отмена&quot;."
+                               wrapText="true">
+                            <font>
+                                <Font size="17.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="529.0"
+                               text="Целевая функция имеет вид: a1*X1 + a2*X2 + ... + C; ограничения вводятся в формате a1*X1 + a2*X2 + ... = b."
+                               wrapText="true">
+                            <font>
+                                <Font size="17.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" prefHeight="70.0" prefWidth="529.0"
+                               text="Во вкладке с требуемым методом решения можно получить ответ и детальное решение задачи.  "
+                               wrapText="true">
+                            <font>
+                                <Font size="17.0"/>
+                            </font>
+                        </Label>
+
+                        <Label alignment="TOP_LEFT" prefHeight="55.0" prefWidth="529.0"
+                               text="Получение промежуточных результатов происходит через нажатие &quot;Следующий шаг&quot;."
+                               wrapText="true">
+                            <font>
+                                <Font size="17.0"/>
+                            </font>
+                        </Label>
+
+
+                        <Label alignment="TOP_LEFT" prefHeight="113.0" prefWidth="529.0"
+                               text="В случае нажатия кнопки &quot;Следующий шаг&quot; и если задача ещё не решена, необходимо выбирать опорный элемент."
+                               wrapText="true">
+                            <font>
+                                <Font size="17.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </content>
+            <padding>
+                <Insets left="5.0" top="5.0"/>
+            </padding>
+        </ScrollPane>
+    </center>
+</BorderPane>

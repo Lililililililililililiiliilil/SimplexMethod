@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Simplex">
+    <output-path>$PROJECT_DIR$/out/artifacts/Simplex</output-path>
+    <root id="root">
+      <element id="archive" name="Simplex.jar">
+        <element id="module-output" name="Simplex" />
+      </element>
+    </root>
+  </artifact>
+</component>
